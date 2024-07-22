@@ -1,0 +1,141 @@
+.app {
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+@media (max-width: 500px) {
+  .main {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 950px) {
+  .main {
+    margin-top: 15px;
+  }
+}
+
+.input-section {
+  display: flex;
+  margin-top: 20px;
+}
+
+.input-section input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.generate-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  background-color: #2424f1;
+  color: white;
+  cursor: pointer;
+}
+
+.generate-button.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+}
+
+.content h2,
+.content p,
+.content h3 {
+  margin-bottom: 10px;
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.equation {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.equation {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2,
+h3 {
+  margin-bottom: 10px;
+}
+
+.typewriter-text {
+  white-space: pre-wrap;
+}
+
+.equation-display button {
+  width: 100%;
+  max-width: 150px;
+  height: 35px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.update-equation {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.update-equation textarea {
+  width: 100%;
+  max-width: 200px;
+  height: 100%;
+  min-height: 70px;
+  resize: none;
+}
+
+.update-button {
+  margin-bottom: 10px;
+}
+
+.update-button button {
+  width: 100%;
+  max-width: 150px;
+  height: 35px;
+  margin-top: 5px;
+  cursor: pointer;
+}
